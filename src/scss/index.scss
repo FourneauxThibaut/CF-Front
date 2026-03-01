@@ -1,0 +1,10 @@
+// Point d'entrée SCSS du projet
+// À importer dans main.ts : import '@/scss/index.scss'
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// Styles globaux optionnels utilisant les variables
+body {
+  font-family: $font-sans;
+}

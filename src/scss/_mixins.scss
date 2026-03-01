@@ -1,0 +1,6 @@
+// Mixins SCSS du projet
+
+@mixin focus-ring {
+  outline: 2px solid var(--color-primary, #646cff);
+  outline-offset: 2px;
+}
