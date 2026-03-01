@@ -56,7 +56,15 @@ async function handleSignOut() {
         <p class="text-stone-500 text-xs mt-2">ID: {{ me.id }}</p>
       </div>
       <div v-else class="text-stone-500">Loading…</div>
-      <p class="mt-6 text-stone-500 text-sm">
+      <div class="mt-6">
+        <router-link
+          to="/rule-editor"
+          class="inline-flex items-center rounded-lg bg-amber-500/20 text-amber-400 px-4 py-2 text-sm font-medium hover:bg-amber-500/30 transition"
+        >
+          Éditeur de règles →
+        </router-link>
+      </div>
+      <p class="mt-4 text-stone-500 text-sm">
         Client user: {{ user?.email ?? '—' }}
       </p>
     </main>

@@ -3,6 +3,7 @@ import type { RouteRecordRaw } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 import LandingView from '@/views/LandingView.vue'
 import DashboardView from '@/views/DashboardView.vue'
+import RuleEditorView from '@/views/RuleEditorView.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -15,6 +16,18 @@ const routes: RouteRecordRaw[] = [
     path: '/dashboard',
     name: 'dashboard',
     component: DashboardView,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/rule-editor',
+    name: 'rule-editor',
+    component: RuleEditorView,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/rule-editor/:systemId',
+    name: 'rule-editor-system',
+    component: RuleEditorView,
     meta: { requiresAuth: true },
   },
 ]

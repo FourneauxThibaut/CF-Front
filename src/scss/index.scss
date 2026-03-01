@@ -1,10 +1,15 @@
-// Point d'entrée SCSS du projet
-// À importer dans main.ts : import '@/scss/index.scss'
-
+// Point d'entrée SCSS du projet (import dans main.ts)
 @use 'variables' as *;
 @use 'mixins' as *;
 
-// Styles globaux optionnels utilisant les variables
+// Thème : exposé en custom properties pour Tailwind / CSS
+:root {
+  --color-primary: #{$color-primary};
+  --color-primary-hover: #{$color-primary-hover};
+  --font-sans: #{$font-sans};
+  --font-mono: #{$font-mono};
+}
+
 body {
   font-family: $font-sans;
 }
