@@ -38,7 +38,7 @@ async function removeRule(ruleId: string) {
     <div class="flex-1 overflow-auto p-2">
       <button
         type="button"
-        class="w-full rounded-lg border border-dashed border-stone-600 py-2 text-xs text-stone-500 hover:border-amber-500/50 hover:text-amber-500/80 transition mb-2"
+        class="w-full rounded-lg border border-dashed border-stone-600 py-2 text-xs text-stone-500 hover:border-primary/50 hover:text-primary/80 transition mb-2"
         @click="addRule"
       >
         + Nouvelle règle
@@ -48,7 +48,7 @@ async function removeRule(ruleId: string) {
           v-for="rule in rules()"
           :key="rule.id"
           class="group flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition"
-          :class="currentRuleId === rule.id ? 'bg-amber-500/15 text-amber-400/90' : 'text-stone-400 hover:bg-stone-800/50'"
+          :class="currentRuleId === rule.id ? 'bg-primary/15 text-primary/90' : 'text-stone-400 hover:bg-stone-800/50'"
         >
           <button
             type="button"

@@ -30,7 +30,7 @@ async function handleSignOut() {
       <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
         <router-link
           to="/"
-          class="font-semibold text-lg tracking-tight text-amber-400/90 hover:text-amber-400"
+          class="font-semibold text-lg tracking-tight text-primary/90 hover:text-primary"
         >
           Cherryfire
         </router-link>
@@ -52,14 +52,14 @@ async function handleSignOut() {
         class="rounded-xl border border-stone-800/80 bg-stone-900/50 p-6 max-w-md"
       >
         <p class="text-stone-400 text-sm mb-1">Logged in as (from Go API /api/me)</p>
-        <p class="font-mono text-amber-400/90">{{ me.email }}</p>
+        <p class="font-mono text-primary/90">{{ me.email }}</p>
         <p class="text-stone-500 text-xs mt-2">ID: {{ me.id }}</p>
       </div>
       <div v-else class="text-stone-500">Loading…</div>
       <div class="mt-6">
         <router-link
           to="/rule-editor"
-          class="inline-flex items-center rounded-lg bg-amber-500/20 text-amber-400 px-4 py-2 text-sm font-medium hover:bg-amber-500/30 transition"
+          class="inline-flex items-center rounded-lg bg-primary/20 text-primary px-4 py-2 text-sm font-medium hover:bg-primary/30 transition"
         >
           Éditeur de règles →
         </router-link>

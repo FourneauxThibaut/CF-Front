@@ -79,7 +79,7 @@ async function deleteBlock(blockId: string) {
     <div class="border-t border-stone-800 p-4">
       <button
         type="button"
-        class="w-full rounded-lg border border-dashed border-stone-600 py-3 text-sm text-stone-500 hover:border-amber-500/50 hover:text-amber-500/80 transition"
+        class="w-full rounded-lg border border-dashed border-stone-600 py-3 text-sm text-stone-500 hover:border-primary/50 hover:text-primary/80 transition"
         @click="openPalette"
       >
         + Ajouter un bloc

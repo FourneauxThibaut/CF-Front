@@ -48,27 +48,11 @@ async function handleSubmit() {
 
 <template>
   <div class="min-h-screen bg-stone-950 text-stone-100 flex flex-col">
-    <header class="border-b border-stone-800/60">
-      <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-        <span class="font-semibold text-lg tracking-tight text-amber-400/90">
-          Cherryfire
-        </span>
-        <nav class="flex gap-4">
-          <a
-            href="#auth"
-            class="text-stone-400 hover:text-stone-200 text-sm transition"
-          >
-            Sign in
-          </a>
-        </nav>
-      </div>
-    </header>
-
     <main class="flex-1 flex flex-col items-center justify-center px-4 py-16">
       <section class="text-center max-w-2xl mx-auto mb-16">
         <h1 class="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
           Build something
-          <span class="text-amber-400/90">that matters</span>
+          <span class="text-primary/90">that matters</span>
         </h1>
         <p class="text-stone-400 text-lg">
           A simple stack: Vue, Go. Auth via CF-Back API.
@@ -91,7 +75,7 @@ async function handleSubmit() {
               type="email"
               required
               autocomplete="email"
-              class="w-full rounded-lg bg-stone-800/80 border border-stone-700 text-stone-100 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500/50"
+              class="w-full rounded-lg bg-stone-800/80 border border-stone-700 text-stone-100 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50"
               placeholder="you@example.com"
             />
           </div>
@@ -105,7 +89,7 @@ async function handleSubmit() {
               type="password"
               required
               :autocomplete="mode === 'signin' ? 'current-password' : 'new-password'"
-              class="w-full rounded-lg bg-stone-800/80 border border-stone-700 text-stone-100 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500/50"
+              class="w-full rounded-lg bg-stone-800/80 border border-stone-700 text-stone-100 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50"
               placeholder="••••••••"
             />
           </div>
@@ -113,7 +97,7 @@ async function handleSubmit() {
           <button
             type="submit"
             :disabled="submitLoading"
-            class="w-full rounded-lg bg-amber-500/90 hover:bg-amber-500 text-stone-900 font-medium py-2.5 transition disabled:opacity-50 disabled:cursor-not-allowed"
+            class="w-full rounded-lg bg-primary/90 hover:bg-primary text-white font-medium py-2.5 transition disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {{ submitLoading ? 'Please wait…' : title }}
           </button>
@@ -123,7 +107,7 @@ async function handleSubmit() {
           <button
             type="button"
             @click="toggleMode"
-            class="text-amber-400/90 hover:text-amber-400 font-medium ml-1"
+            class="text-primary/90 hover:text-primary font-medium ml-1"
           >
             {{ switchLabel }}
           </button>

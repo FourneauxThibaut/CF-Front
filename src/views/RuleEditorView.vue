@@ -70,7 +70,7 @@ function cancelNew() {
       <div class="max-w-full mx-auto px-4 py-3 flex items-center justify-between">
         <router-link
           to="/dashboard"
-          class="font-semibold tracking-tight text-amber-400/90 hover:text-amber-400"
+          class="font-semibold tracking-tight text-primary/90 hover:text-primary"
         >
           ← Cherryfire
         </router-link>
@@ -91,7 +91,7 @@ function cancelNew() {
           <li
             v-for="sys in systems"
             :key="sys.id"
-            class="rounded-xl border border-stone-800 bg-stone-900/50 p-4 hover:border-amber-500/40 transition cursor-pointer"
+            class="rounded-xl border border-stone-800 bg-stone-900/50 p-4 hover:border-primary/40 transition cursor-pointer"
             @click="openSystem(sys.id)"
           >
             <p class="font-medium text-stone-200">{{ sys.name }}</p>
@@ -101,7 +101,7 @@ function cancelNew() {
         <div v-if="!creating" class="flex gap-2">
           <button
             type="button"
-            class="rounded-lg bg-amber-500/20 text-amber-400 px-4 py-2 text-sm font-medium hover:bg-amber-500/30 transition"
+            class="rounded-lg bg-primary/20 text-primary px-4 py-2 text-sm font-medium hover:bg-primary/30 transition"
             @click="startNew"
           >
             + Nouveau système
@@ -112,13 +112,13 @@ function cancelNew() {
             v-model="newName"
             type="text"
             placeholder="Nom du système"
-            class="w-full rounded-lg bg-stone-800 border border-stone-600 px-3 py-2 text-stone-100 placeholder-stone-500 focus:outline-none focus:ring-1 focus:ring-amber-500/50"
+            class="w-full rounded-lg bg-stone-800 border border-stone-600 px-3 py-2 text-stone-100 placeholder-stone-500 focus:outline-none focus:ring-1 focus:ring-primary/50"
             @keydown.enter="createAndOpen"
           />
           <div class="flex gap-2 mt-3">
             <button
               type="button"
-              class="rounded-lg bg-amber-500/20 text-amber-400 px-4 py-2 text-sm font-medium hover:bg-amber-500/30 transition"
+              class="rounded-lg bg-primary/20 text-primary px-4 py-2 text-sm font-medium hover:bg-primary/30 transition"
               @click="createAndOpen"
             >
               Créer et ouvrir
