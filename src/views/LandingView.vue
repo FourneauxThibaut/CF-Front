@@ -71,7 +71,7 @@ async function handleSubmit() {
           <span class="text-amber-400/90">that matters</span>
         </h1>
         <p class="text-stone-400 text-lg">
-          A simple stack: Vue, Go, Supabase. Get started with auth in seconds.
+          A simple stack: Vue, Go. Auth via CF-Back API.
         </p>
       </section>
 
@@ -132,7 +132,7 @@ async function handleSubmit() {
     </main>
 
     <footer class="border-t border-stone-800/60 py-6 text-center text-stone-500 text-sm">
-      Cherryfire — Vue + Go + Supabase
+      Cherryfire — Vue + Go
     </footer>
   </div>
 </template>

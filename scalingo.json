@@ -1,0 +1,10 @@
+{
+  "name": "Cherry Fire Front",
+  "description": "Vue 3 frontend with Vite",
+  "env": {
+    "VITE_API_URL": {
+      "description": "CF-Back API URL (e.g. https://cf-back.osc-fr1.scalingo.com)",
+      "required": true
+    }
+  }
+}

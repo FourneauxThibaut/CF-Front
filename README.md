@@ -1,5 +1,20 @@
-# Vue 3 + TypeScript + Vite
+# CF-Front
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Vue 3 + TypeScript + Vite. Auth via CF-Back API, Pinia, Tailwind.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Dev
+
+```bash
+bun install   # or npm install
+bun run dev   # or npm run dev
+```
+
+## Scalingo
+
+Buildpacks (Node.js), pas Docker. Le buildpack détecte `package.json`, lance `npm run build` puis `node server.cjs` pour servir `dist/`.
+
+Variable à définir (Dashboard > Environment) — injectée au build :
+
+- `VITE_API_URL` — URL de l’API CF-Back (ex. `https://cf-back.osc-fr1.scalingo.com`)
+
+Auto-deploy : connecter le repo GitHub dans Scalingo Dashboard > App > Deployment. Chaque push sur la branche configurée déclenche un déploiement.
