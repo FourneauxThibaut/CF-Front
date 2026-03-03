@@ -1,4 +1,4 @@
-<template>
+an you <template>
 	<header v-if="isAuthenticated" class="border-b border-stone-800/60 bg-stone-950">
 		<div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
 			<RouterLink :to="{ name: 'dashboard' }" class="flex items-center gap-2">
